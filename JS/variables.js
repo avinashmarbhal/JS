@@ -10,7 +10,7 @@ accountEmail = "avinash@gmail.com"
 accountPassword = "2165485"
 accountCity = "PUNE"
 
-/ console.log("hii");
+// console.log("hii");
 // console.log(accountEmail);
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState]);
 
