@@ -61,3 +61,33 @@ const myfunction = function(){
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+
+
+
+//++++++++++++++++++++++++++ Stack(primitive), Heap(non-primitive) Memory in JS  +++++++++++++++++++++++++++++++++++++++
+
+let myName = "Avinash"; 
+
+let anotherName = myName // in Primitive(stack) type if you give reference to an one variable tlo another then a copy of that value is created in stack and that refrence is given to the new variable so the orignal value is untuched
+
+anotherName = "Photographic"  
+
+// console.log(myName);
+// console.log(anotherName);
+
+
+
+
+let userOne = {
+    emmail: "avi@googole.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne; // but in non-peimitive(heap) type if you give refrence to another variable then instaed of coping the same reference is given to taht , that means if change the value of new variable then the value if the old vatiable would aslo be get changed
+
+userTwo.emmail = "Avinash@gmeil.com"
+
+// console.log(userOne.emmail); => AVinash@gmail.com
+// console.log(userTwo.emmail); => AVinash@gmail.com
